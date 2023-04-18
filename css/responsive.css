@@ -1,0 +1,228 @@
+/*html */
+@media screen and (max-width:767px) {
+    html {
+        /* font-size: 13px; */
+    }
+}
+
+
+/*header section*/
+@media screen and (max-width:991px) {
+    .header .links a.icon {
+        display: block;
+    }
+
+    .header .links ul {
+        background: rgba(0, 0, 0, 0.80);
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -500%;
+        transition: 2s top;
+        z-index: 10;
+    }
+
+    .header .links:hover a.icon~ul {
+        top: 100%;
+    }
+
+    .header .links ul li {
+        padding: 10px 20PX;
+    }
+
+    .header .links ul li:not(:last-child) {
+        border-bottom: 0.3px solid #eeeeee2e;
+    }
+
+}
+
+/*about me section*/
+@media screen and (max-width:767px) {
+    .about-me .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .about-container .content1,
+    .about-me .about-container .content2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-me .content3 .box {
+        width: 50%;
+    }
+
+    .about-me .content3 .box:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-me .content3 .box:nth-child(1),
+    .about-me .content3 .box:nth-child(3) {
+        border-right: 1px dotted #e0dede;
+    }
+
+    .about-me .content3 .box:nth-child(1),
+    .about-me .content3 .box:nth-child(2) {
+        border-bottom: 1px dotted #e0dede;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .about-me .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .about-container .content1,
+    .about-me .about-container .content2 {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/*services section*/
+@media screen and (max-width:767px) {
+    .services .box {
+        width: 80%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/*resume section*/
+@media screen and (max-width:767px) {
+
+    .resume .content,
+    .resume .skills .progress-content {
+        flex-direction: column;
+    }
+
+    .resume .skills .progress-content {
+        gap: 0;
+    }
+}
+
+
+/* portfolio section */
+@media screen and (max-width:575px) {
+
+    .portfolio .image-container,
+    .portfolio .image-container2 {
+        display: none;
+    }
+
+    .portfolio .image-container3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    .portfolio .image-container3 .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width: 991px) {
+    .portfolio .image-container {
+        display: none;
+    }
+
+    .portfolio .image-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    .portfolio .image-container2 .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+}
+
+/* client section*/
+@media screen and (max-width: 991px) {
+    .client .content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .client .content .box {
+        flex-basis: 90%;
+    }
+
+    .client .content button.circle-btn3,
+    .client .content button.circle-btn4 {
+        display: flex;
+    }
+
+    /*box transition*/
+    .client .box3,
+    .client .box4,
+    .client .box2 {
+        display: none;
+    }
+
+    .client .content button.circle-btn2:hover~.box1,
+    .client .content button.circle-btn2:hover~.box3,
+    .client .content button.circle-btn2:hover~.box4 {
+        display: none;
+    }
+
+    .client .content button.circle-btn2:hover~.box2 {
+        display: block;
+    }
+
+    .client .content button.circle-btn3:hover~.box1,
+    .client .content button.circle-btn3:hover~.box2,
+    .client .content button.circle-btn3:hover~.box4 {
+        display: none;
+    }
+
+    .client .content button.circle-btn3:hover~.box3 {
+        display: block;
+    }
+
+    .client .content button.circle-btn4:hover~.box1,
+    .client .content button.circle-btn4:hover~.box2,
+    .client .content button.circle-btn4:hover~.box3 {
+        display: none;
+    }
+
+    .client .content button.circle-btn4:hover~.box4 {
+        display: block;
+    }
+}
+
+/* contact section*/
+@media screen and (max-width:767px) {
+    .contact .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .contact .container .section1,
+    .contact .container .section2 {
+        width: 90%;
+    }
+
+    .contact .container .section2 input,
+    .contact .container .section2 textarea {
+        width: 100%;
+    }
+}
+
+
+/*footer */
+@media screen and (max-width:992px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
